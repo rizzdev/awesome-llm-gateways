@@ -2,9 +2,9 @@
 
 > The LLM proxy layer you can actually run yourself.
 
-An LLM gateway is now default infra: one endpoint in front of every model provider, doing key management, fallback, load balancing, routing, caching, and spend limits so your app doesn't have to. But most of the "gateway" conversation points at hosted products — OpenRouter, Cloudflare AI Gateway, Vercel AI Gateway — where your API keys and every prompt flow through someone else's servers.
+An LLM gateway is now default infra: one endpoint in front of every model provider, doing key management, fallback, load balancing, routing, caching, and spend limits so your app doesn't have to. But most of the "gateway" conversation points at hosted products (OpenRouter, Cloudflare AI Gateway, Vercel AI Gateway) where your API keys and every prompt flow through someone else's servers.
 
-This list is the opposite. Every gateway, router, and cache here is **open-source** and **self-hostable** — you run the proxy, your keys and traffic never leave your infrastructure, and nothing on the list quietly dies when a vendor sunsets a plan. Where a project is genuinely open but paywalls its production hardening — SSO, budgets, HA, guardrails — it's flagged $\textcolor{red}{\textsf{open-core}}$ so you know before you build on it.
+This list is the opposite. Every gateway, router, and cache here is **open-source** and **self-hostable**. You run the proxy, your keys and traffic never leave your infrastructure, and nothing on the list quietly dies when a vendor sunsets a plan. Where a project is genuinely open but paywalls its production hardening (SSO, budgets, HA, guardrails), it's flagged $\textcolor{red}{\textsf{open-core}}$ so you know before you build on it.
 
 ## Contents
 
@@ -17,30 +17,30 @@ This list is the opposite. Every gateway, router, and cache here is **open-sourc
 
 ### What earns a place
 
-Three tests, all required. Miss one and it's off the list — no matter how good the tool is.
+Three tests, all required. Miss one and it's off the list, no matter how good the tool is.
 
 | test | means |
 |---|---|
-| **self-hostable** | you run the gateway yourself — your API keys and request traffic never pass through a vendor's servers |
+| **self-hostable** | you run the gateway yourself, your API keys and request traffic never pass through a vendor's servers |
 | **open-source** | a real OSI license you can audit before it sits in your critical path |
-| **no lock-in** | OpenAI-compatible or standard interface, so you can pull it out — not dead weight without a paid backend |
+| **no lock-in** | OpenAI-compatible or standard interface, so you can pull it out, not dead weight without a paid backend |
 
-**Cut on purpose:** cloud-only gateways you can't self-host (OpenRouter, Cloudflare AI Gateway, Vercel AI Gateway, Not Diamond, Martian, Requesty, Unify, Keywords AI, Eden AI), source-available-but-not-OSI projects (e.g. LangDB/vLLora's Elastic License), and repos that have gone dark (Lunary, TensorZero). Fine tools — just not open + self-hostable, so not here.
+**Cut on purpose:** cloud-only gateways you can't self-host (OpenRouter, Cloudflare AI Gateway, Vercel AI Gateway, Not Diamond, Martian, Requesty, Unify, Keywords AI, Eden AI), source-available-but-not-OSI projects (e.g. LangDB/vLLora's Elastic License), and repos that have gone dark (Lunary, TensorZero). Fine tools, just not open + self-hostable, so not here.
 
 ---
 
 ### Red flags
 
-A note in $\textcolor{red}{\textsf{red}}$ marks friction you'll hit before the tool earns its place — a fact you can verify on the repo page in seconds:
+A note in $\textcolor{red}{\textsf{red}}$ marks friction you'll hit before the tool earns its place, a fact you can verify on the repo page in seconds:
 
 | flag | meaning |
 |---|---|
 | $\textcolor{red}{\textsf{open-core}}$ | genuinely OSS, but production features (SSO, budgets, HA, guardrails) sit behind a paid tier |
 | $\textcolor{red}{\textsf{fiddly setup}}$ | needs Docker plus a database/Redis, or a full Kubernetes cluster, before first use |
-| $\textcolor{red}{\textsf{slowing down}}$ | real and usable, but going quiet — acquired, in maintenance mode, or no meaningful commits lately |
+| $\textcolor{red}{\textsf{slowing down}}$ | real and usable, but going quiet (acquired, in maintenance mode, or no meaningful commits lately) |
 | $\textcolor{red}{\textsf{early}}$ | young or pre-1.0, small maintainer, API still moving |
 
-*Copyleft heads-up: New API and LLM Gateway are AGPL-3.0 — free to self-host, but if you modify them and offer them as a network service, the license obligates you to publish your changes.*
+*Copyleft heads-up: New API and LLM Gateway are AGPL-3.0, free to self-host, but if you modify them and offer them as a network service, the license obligates you to publish your changes.*
 
 ---
 
@@ -83,7 +83,7 @@ Cache responses by meaning, not exact string match, to cut token spend and laten
 <a id="client-side-routers"></a>
 ## 🔌 Client-Side Routers
 
-Libraries you embed in your app for one unified interface across providers — the router lives in your process, not a separate proxy.
+Libraries you embed in your app for one unified interface across providers, the router lives in your process, not a separate proxy.
 
 - **[aisuite](https://github.com/andrewyng/aisuite)** · Andrew Ng's thin unified chat-completions wrapper across ~10 providers through a single OpenAI-style client call
 - **[any-llm](https://github.com/mozilla-ai/any-llm)** · Mozilla.ai's unified Python interface calling official provider SDKs directly behind one function, with no hosted dependency
