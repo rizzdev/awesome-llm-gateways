@@ -51,6 +51,7 @@ Unified proxies that sit in front of many providers behind one OpenAI-compatible
 
 - **[Apache APISIX](https://github.com/apache/apisix)** · Cloud-native API gateway whose built-in ai-proxy plugin routes OpenAI-compatible traffic across LLM providers with rate limiting and logging
 - **[Bifrost](https://github.com/maximhq/bifrost)** · Single-binary Go gateway unifying 1,000+ models behind one OpenAI-compatible API with sub-100µs routing overhead · $\textcolor{red}{\textsf{open-core}}$
+- **[Company AI Hub](https://github.com/Ghost011118/company-ai-hub)** · Self-hosted TypeScript gateway exposing OpenAI-compatible Responses and Chat Completions endpoints with centrally reviewed Agent, Skill, and Prompt injection · $\textcolor{red}{\textsf{early}}$
 - **[Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway)** · Kubernetes-native LLM gateway built on Envoy handling multi-provider routing, token rate limiting, and failover via CRDs · $\textcolor{red}{\textsf{fiddly setup}}$
 - **[Helicone](https://github.com/Helicone/helicone)** · Drop-in OpenAI-compatible proxy for logging, caching, cost tracking, and rate limiting, with full self-host feature parity · $\textcolor{red}{\textsf{slowing down}}$
 - **[Higress](https://github.com/higress-group/higress)** · Istio/Envoy-based API gateway with native AI plugins for multi-provider LLM routing, rate limiting, and MCP hosting
@@ -93,4 +94,4 @@ Libraries you embed in your app for one unified interface across providers, the 
 
 ---
 
-*Last audited 2026-07-22 · 23 tools · open-source & self-hostable only · [Submit a gateway](contributing.md)*
+*Last audited 2026-07-22 · 24 tools · open-source & self-hostable only · [Submit a gateway](contributing.md)*
