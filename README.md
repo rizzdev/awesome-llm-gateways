@@ -59,6 +59,7 @@ Unified proxies that sit in front of many providers behind one OpenAI-compatible
 - **[LLM Gateway](https://github.com/theopenco/llmgateway)** · TypeScript gateway unifying LLM providers behind one API with usage analytics, caching, and provider key management · $\textcolor{red}{\textsf{open-core}}$ · $\textcolor{red}{\textsf{fiddly setup}}$
 - **[New API](https://github.com/QuantumNous/new-api)** · Actively maintained one-api fork adding a model marketplace, token billing, and OpenAI/Claude/Gemini-compatible endpoints
 - **[Portkey AI Gateway](https://github.com/Portkey-AI/gateway)** · Fast Node/Bun gateway routing to 1,600+ models with retries, load balancing, virtual keys, and caching; runs via npx · $\textcolor{red}{\textsf{open-core}}$
+- **[Yabanin Core](https://github.com/yabaninai/yabanin-core)** · Self-hosted Go gateway with OpenAI- and Anthropic-compatible APIs, model routing, access controls, and usage tracking (Apache-2.0; Developer Preview) · $\textcolor{red}{\textsf{early}}$ · $\textcolor{red}{\textsf{fiddly setup}}$
 
 <a id="model-routers"></a>
 ## 🧭 Model Routers
